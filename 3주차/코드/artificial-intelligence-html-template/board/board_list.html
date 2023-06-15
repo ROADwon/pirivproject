@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>작업일지 게시판</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!--Favicon in here-->
+
+        <!--Font in here-->
+
+        <!--Icon Font in here-->
+        
+        <!--Libraries in here-->
+
+        <!--Style sheet in here-->
+
+        <!-- Template in  here-->
+        <link href ="../board/style.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <!--class="card" : 게시판 화면-->
+        <div class="card">
+            <!--class="card_header"-->
+                <!-- Navbar Start -->
+            <div class="container-fluid sticky-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-white">KT-AIvle<span class="text-dark"></span>게시판</h1></a>
+                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="project.html" class="nav-item nav-link">Projects</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu bg-light mt-2">
+                                    <a href="feature.html" class="dropdown-item">Features</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="faq.html" class="dropdown-item">FAQs</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    </div>
+            </nav>
+        </div>
+    </div>
+            <!--class="card_body"-->
+            <div class="card_body">
+                <!--작업일지 게시판에서 내용 검색-->
+                <input type="search" placeholder="검색어 입력...">
+                <a class="search" href="#">검색</a>
+            <!--class="card_next"-->
+            <div class="card_next"></div>
+            <!--announcement.html = 공지사항.html-->
+                <ul class="select_board">
+                    <li><a href="announcement.html">공지사항</a></li>
+                    <li><a href="board_list.html">작업일지</a></li>
+                </ul>
+            </div>
+            <!--작업일지 게시판 내용-->
+                <div class="content_box">
+                    <div class="check"><input type="checkbox" name=""id=""></div>               
+                    <div class="title"><a href="view.html">게시판의 제목입니다</a></div>
+                    <div class="delete"><button>X</button></div>
+                </div>
+                <div class="content_list">
+                    <div class="check"><input type="checkbox" name=""id=""></div>
+                    <div class="title"><a href="view.html"> 게시판에 제목을 입력합니다</a></div>
+                    <div class="delete"><button>X</button></div>
+                </div>
+                <div class="content_box">
+                    <div class="check"><input type="checkbox" name=""id=""></div>
+                    <div class="title"><a href="view.html">이곳에 제목을 입력합니다.</a></div>
+                    <div class="delete"><button>X</button></div>
+                </div>
+                <div class="content_box">
+                    <div class="check"><input type="checkbox"name=""id=""></div>
+                    <div class="title"><a href="view.html">이곳에 제목을 입력합니다.</a></div>
+                    <div class="delete"><button>X</button></div>
+                </div>
+                <ul class="number">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#"class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </div>
+
+            <!--글 작성 class="btn"-->
+            <div class="btn">
+                <a href="write.html">글작성</a>
+            </div>
+            <!--nav bar start-->
+            
+        </div>
+    </body>
+</html>

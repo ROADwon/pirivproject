@@ -1,0 +1,175 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+li{
+    list-style: non;
+}
+
+a{
+    color : inherit;
+    text-decoration : none;
+}
+
+head{
+    display : block;
+}
+
+.card{
+    width : 600px;
+    height : 600px;
+    margin : 100px auto;
+
+    box-shadow: 3px 3px 50px #e6e6e6;
+    border-radius: 20px;
+    position: relative;
+}
+.card_header h1{
+    font-size : 20px;
+    text-align: center;
+}
+.card_body input[type="search"]{
+    padding: 10px;
+    margin-bottom:10px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    width:300px;
+    font-size:16px;
+}
+
+.card_body a.search{
+    padding : 10px 15px 10px 15px;
+    margin-left: 10px;
+    background-color : tomato;
+    color : #fff;
+}
+.card_body div {
+    margin-top: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.card_body div div{
+    display : inline-block;
+    padding: 15px 10px 15px 10px;
+    margin : 0;
+    border : none;
+}
+
+.card_body .check,.delete{
+    width : 5%;
+}
+.card_body .title{
+    width:70%;
+    text-align: left;
+}
+
+.card_body .delete button{
+    background-color : #fff;
+    border : none;
+}
+.number {
+    padding: 10px;
+}
+.number li{
+    display : inline-block;
+}
+
+.number li a {
+    display : block;
+    width:40px;
+    line-height: 40px;
+    border-radius : 10px;
+    margin : 3px;
+    margin-top : 20px;
+    box-shadow : 0 5px 10px #f1f1f1;
+}
+
+.number li a.active{
+    background-color : rgb(252, 212, 205);
+}
+.btn {
+    position : absolute;
+    right : 0;
+    bottom : 0;
+    padding : 10px;
+    margin : 10px 10px 20px 10px;
+}
+
+.btn a{
+    padding:10px;
+    background-color:tomato;
+    color : #fff;
+    border-radius: 10px;
+}
+/*** Navbar ***/
+.sticky-top {
+    top: -150px;
+    transition: .5s;
+}
+
+.navbar {
+    padding: 11px 0 !important;
+    height: 75px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 0;
+    color: rgba(255, 255, 255, .7);
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background: var(--primary);
+    }
+
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* 작업일지와 공지사항 띄워주기 */
+.card_next {
+    margin : 0px;
+    background-color: #999;
+}
+.card_next .select_board a{
+    display : inline-block;
+    
+}
