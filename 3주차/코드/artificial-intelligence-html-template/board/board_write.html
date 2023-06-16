@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <tilte>KT_AIVLE</tilte>
+        <meta content="width=device-width, intitail-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+
+        <!--Google Web Font-->
+
+        <!-- Icon Font Stylesheet -->
+
+        <!--Libraries Stylesheet-->
+
+        <!--Customized Bootstrap Templates-->
+
+        <!--Template Stlyesheet-->
+        <link href="css/style.css" rel = "stylesheet">
+
+    </head>
+
+    <body>
+        <?$board_id=$_GET["board_id"];?>
+        <div id ="board_write">
+            <h4>작업일지</h4>
+            <!-- write_area = 게시판 내용 작성 페이지 -->
+            <div id = "write_area">
+                <form enctype="multipart/form-data" action="write_ok.php?board_id=<?echo $board_id;?>" method="post">
+                    <div id="in_title">
+                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="내용" required></textarea>    
+                    </div>
+
+                    <div class="wi_line"></div>
+                    <div id="in_content">
+                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
+                    </div>
+
+                    <input type="file" name="SelectFile"  />
+                
+                    <div class="bt_se">
+                        <button type="submit">내용 입력</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
